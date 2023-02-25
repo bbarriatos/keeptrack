@@ -8,6 +8,7 @@ import {
 import "./App.css";
 import HomePage from "./home/HomePage";
 import ProjectsPage from "./projects/ProjectsPage";
+import ProjectPage from "./projects/ProjectPage";
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             path="/projects"
             element={<ProjectsPage></ProjectsPage>}
           ></Route>
+          <Route path="/projects/:id" element={<ProjectPage />} />
         </Routes>
       </div>
     </Router>
